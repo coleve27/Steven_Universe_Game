@@ -84,6 +84,7 @@ steven = Math.floor(Math.random()*12);
 }
 
 function loseGame(){
+  counter = 0;
   secretNumber = Math.floor(Math.random()*100) + 20;
     console.log(secretNumber);
       $("#number-to-guess").text(secretNumber);
