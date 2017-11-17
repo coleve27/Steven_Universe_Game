@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>simple crystal game</title>
+  <link rel="stylesheet" href="assets/css/reset.css" tyle="text/css">
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:900i" rel="stylesheet">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
 </head>
 <body>
 
@@ -11,25 +17,28 @@
     <div class="instructions">
     </div>
     <div class="randomNumber">
+      <h1 id="number-to-guess"></h1>
     </div>
     <div class="score">
       <div class="wins">
+        <h1 id="wincount"></h1>
       </div>
       <div class="losses">
+        <h1 id="losecount"></h1>
       </div>
     </div>
     <div class="gems">
       <div class="garnet">
-
+        <img src="assets/images/garnet.png" alt="garnet" class="img garnet" style="height: 300px">
       </div>
       <div class="amethyst">
-        
+        <img src="assets/images/amethyst.png" alt="amethyst" class="img amethyst" style="height: 300px">
       </div>
       <div class="Pearl">
-
+        <img src="assets/images/pearl.jpg" alt="pearl" class="img pearl" style="height: 300px">
       </div>
       <div class="steven">
-
+        <img src="assets/images/steven.jpg" alt="steven" class="img steven" style="height: 300px">
       </div>
     </div>
     <div  class="total">
@@ -40,8 +49,7 @@
   </div>
 </body>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"/>
-
-<script type="text/javascript">
+<script type="text/javascript" src="assets/javascript/game.js">
+</script>
 
 </html>
