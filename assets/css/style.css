@@ -3,8 +3,9 @@ body {
   flex-direction: column;
   flex-flow: wrap;
   align-items: flex-start;
-  /*background-color: #fcdaf9;*/
   background-image: url("../images/Ocean_Gem_Background_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: 'Indie Flower', cursive;
 }
 
