@@ -1,0 +1,113 @@
+body {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  align-items: flex-start;
+  /*background-color: #fcdaf9;*/
+  background-image: url("../images/Ocean_Gem_Background_2.jpg");
+  font-family: 'Indie Flower', cursive;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.gameName {
+
+}
+
+.logo {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.instructions {
+  width: 90%;
+  color: #27739c;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.instructions p {
+  width: 100%;
+
+}
+
+.allnumbers {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  margin: 10px 10px 10px 10px;
+}
+
+.randomNumber {
+  min-width: 230px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-style: outset;
+  border-radius: 55px;
+  border-color: #f04937;
+  border-width: 4px;
+  background-color: #ffdd4f;
+  color: #f04937;
+  font-size: 35px;
+  text-align: center;
+}
+
+.count{
+  min-width: 230px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #ffdd4f;
+  border-style: outset;
+  border-radius: 55px;
+  border-color: #f04937;
+  border-width: 4px;
+  text-align: center;
+  color: #f04937;
+  font-size: 35px;
+}
+
+.score {
+  min-width: 230px;
+  min-height: 70px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-style: outset;
+  border-radius: 55px;
+  border-color: #f04937;
+  border-width: 4px;
+  background-color: #ffdd4f;
+  color: #f04937;
+  font-size: 35px;
+  text-align: center;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+
+.gems {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.gems img {
+  max-height: 325px;
+  margin-top: 10px;
+}
