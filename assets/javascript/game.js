@@ -28,7 +28,7 @@ if (counter == secretNumber) {
   winGame()
 
 
-} else if (counter >= secretNumber) {
+} else if (counter > secretNumber) {
   alert("you lose!")
   loseGame()
 }
@@ -39,7 +39,8 @@ return ;
 //describes startState function//
 
 function startState() {
-
+counter = 0;
+$("#userguess").text(counter);
 var amethyst = Math.floor(Math.random()*12)+1;
   $("img.amethyst").attr("data-crystalvalue", amethyst);
 
@@ -57,9 +58,8 @@ var steven = Math.floor(Math.random()*12)+1;
 //resets counter, resets random number, adds 1 to win count//
 
 function winGame() {
-counter = 0
+
 secretNumber = Math.floor(Math.random()*100) + 20;
-  console.log(secretNumber);
     $("#number-to-guess").text(secretNumber);
 
 $("#wincount").text(win += 1);
@@ -73,14 +73,9 @@ startState ();
 //resets counter, resets random number, adds 1 to loss count//
 
 function loseGame(){
-  counter = 0;
   secretNumber = Math.floor(Math.random()*100) + 20;
-    console.log(secretNumber);
       $("#number-to-guess").text(secretNumber);
-
-  startState();
-
   $("#losecount").text(lose += 1);
-
+  startState();
   return;
 }
